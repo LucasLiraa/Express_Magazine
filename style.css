@@ -91,12 +91,10 @@ nav ul li a:hover{
     margin-bottom: 5px;
 }
 
-
 .secondaryNotices{
     display: flex;
     flex-direction: column;
 }
-
 .secondaryNoticesCardOne{
     position: relative;
     display: flex;
@@ -142,51 +140,6 @@ nav ul li a:hover{
     margin-bottom: 5px;
 }
 
-.secondaryNoticesCardTwo{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 200px;
-    width: 400px;
-    margin: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.secondaryNoticesCardTwo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-.secondaryNoticesCardTwo .secondaryNoticesCardTwoText{
-    position: absolute;
-    color: white;
-    padding: 20px;
-    z-index: 1;
-}
-.secondaryNoticesCardTwo .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.2987570028011205) 0%, rgba(0,0,0,1) 90%);
-}
-.secondaryNoticesCardTwo:hover .overlay{
-    background-color: rgba(0, 0, 0, 0.600);
-}
-.secondaryNoticesCardTwo:hover img{
-    transform: scale(1.1);
-}
-.secondaryNoticesCardTwoText h3, p{
-    color: #fff;
-    margin-bottom: 5px;
-}
-
 .listageNotices{
     display: flex;
     flex-direction: column;
@@ -195,7 +148,6 @@ nav ul li a:hover{
     padding: 50px 100px;
     gap: 20px;
 }
-
 .listageNoticeOne{
     display: flex;
     flex-direction: row;
@@ -303,7 +255,6 @@ nav ul li a:hover{
     cursor: pointer;    
     text-decoration: underline;
 }
-
 
 footer{
     background-color: #0B0708;
