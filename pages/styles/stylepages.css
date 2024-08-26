@@ -167,7 +167,7 @@ footer{
     }
     .noticeContent p{
         font-size: 20px;
-        padding: 0px 50px 50px 50px;
+        padding: 0px 20px 100px 20px;
     }
     footer{
         display: flex;
