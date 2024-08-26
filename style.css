@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #0B0708;
+    color: #fff;
+    padding: 10px 0;
+}
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerLogo img{
+    height: auto;
+    width: 800px;
+    margin-bottom: 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 1s;
+}
+nav ul li a:hover{
+    padding: 10px 30px;
+    background-color: #1f1719;
+}
+
+.containerNotices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.primaryNoticeCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 420px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.primaryNoticeCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.primaryNoticeCard .primaryNoticeCardText{
+    position: absolute;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+.primaryNoticeCard .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2987570028011205) 0%, rgba(0,0,0,1) 90%);
+}
+.primaryNoticeCard:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.600);
+}
+.primaryNoticeCard:hover img{
+    transform: scale(1.1);
+}
+.primaryNoticeCardText h2, p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.secondaryNotices{
+    display: flex;
+    flex-direction: column;
+}
+
+.secondaryNoticesCardOne{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.secondaryNoticesCardOne img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.secondaryNoticesCardOne .secondaryNoticesCardOneText{
+    position: absolute;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+.secondaryNoticesCardOne .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2987570028011205) 0%, rgba(0,0,0,1) 90%);
+}
+.secondaryNoticesCardOne:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.600);
+}
+.secondaryNoticesCardOne:hover img{
+    transform: scale(1.1);
+}
+.secondaryNoticesCardOneText h3, p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.secondaryNoticesCardTwo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.secondaryNoticesCardTwo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.secondaryNoticesCardTwo .secondaryNoticesCardTwoText{
+    position: absolute;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+.secondaryNoticesCardTwo .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2987570028011205) 0%, rgba(0,0,0,1) 90%);
+}
+.secondaryNoticesCardTwo:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.600);
+}
+.secondaryNoticesCardTwo:hover img{
+    transform: scale(1.1);
+}
+.secondaryNoticesCardTwoText h3, p{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.listageNotices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    gap: 20px;
+}
+
+.listageNoticeOne{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 820px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.listageNoticeOneImg img{
+    height: 250px;
+    width: 300px; 
+    border-radius: 10px;
+}
+.listageNoticeOneContent{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 600px;
+    margin: 20px;
+    gap: 20px;
+}
+.listageNoticeOneContentTitle a{
+    color: #0B0708;
+    text-decoration: none;
+}
+.listageNoticeTwoContentTitle a{
+    color: #0B0708;
+    text-decoration: none;
+}
+.listageNoticeThreeContentTitle a{
+    color: #0B0708;
+    text-decoration: none;
+}
+.listageNoticeOne:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.listageNoticeOne h3:hover{
+    cursor: pointer;    
+    text-decoration: underline;
+}
+
+.listageNoticeTwo{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 820px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.listageNoticeTwoImg img{
+    height: 250px;
+    width: 300px; 
+    border-radius: 10px;
+}
+.listageNoticeTwoContent{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 600px;
+    margin: 20px;
+    gap: 20px;
+}
+.listageNoticeTwo:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.listageNoticeTwo h3:hover{
+    cursor: pointer;    
+    text-decoration: underline;
+}
+
+.listageNoticeThree{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 820px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.listageNoticeThreeImg img{
+    height: 250px;
+    width: 300px; 
+    border-radius: 10px;
+}
+.listageNoticeThreeContent{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 600px;
+    margin: 20px;
+    gap: 20px;
+}
+.listageNoticeThree:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.listageNoticeThree h3:hover{
+    cursor: pointer;    
+    text-decoration: underline;
+}
+
+
+footer{
+    background-color: #0B0708;
+    color: #fff;
+    padding: 10px 0;
+    height: 140px;
+}
+.footerLogo img{
+    height: 90px;
+    margin: 10px
+}
+.footerInfos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+.footerInfos ul{
+    display: flex;
+    flex-direction: row;
+}
+.footerInfos li{
+    padding: 0 20px;
+}
+.footerInfos li:nth-child(1){
+    border-right: 1px solid #fff;
+}
+.footerInfos li:nth-child(2){
+    border-right: 1px solid #fff;
+}
+.footerInfos li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+    header{
+        height: 20%;
+    }
+    .headerLogo img{
+        width: 80%;
+    }
+    nav ul li a{
+        font-size: 50%;
+        padding: 0;
+    }
+    .containerNotices{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        height: 100%;
+    }
+    .listageNotices{
+        padding: 5%;
+        width: 90%;
+    }
+    .listageNoticeOne{
+        flex-direction: column;
+        height: 520px;
+        width: 400px;
+    }
+    .listageNoticeOneImg{
+        width: 100%;
+    }
+    .listageNoticeOneImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .listageNoticeOneContent{
+        width: 380px;
+        font-size: 80%;
+    }
+    .listageNoticeTwo{
+        flex-direction: column;
+        height: 540px;
+        width: 400px;
+    }
+    .listageNoticeTwoImg{
+        width: 100%;
+    }
+    .listageNoticeTwoImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .listageNoticeTwoContent{
+        width: 380px;
+        font-size: 80%;
+    }
+    .listageNoticeThree{
+        flex-direction: column;
+        height: 500px;
+        width: 400px;
+    }
+    .listageNoticeThreeImg{
+        width: 100%;
+    }
+    .listageNoticeThreeImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .listageNoticeThreeContent{
+        width: 380px;
+        font-size: 80%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 50%;
+    }
+}
