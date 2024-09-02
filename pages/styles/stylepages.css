@@ -71,7 +71,7 @@ nav ul li a:hover{
     padding: 100px 300px;
 }
 .noticeImage{
-    width: 80vw;
+    width: 100vw;
     height: 500px;
     overflow: hidden; /* Esconde o excesso da imagem */
     position: relative;
