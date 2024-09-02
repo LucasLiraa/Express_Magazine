@@ -70,10 +70,17 @@ nav ul li a:hover{
     justify-content: center;
     padding: 100px 300px;
 }
+.noticeImage{
+    width: 80vw;
+    height: 500px;
+    overflow: hidden; /* Esconde o excesso da imagem */
+    position: relative;
+}
 .noticeImage img{
     width: 60vw;
     height: 500px;
     margin: 50px;
+    object-fit: cover; /* Mantém a imagem proporcional e a corta se necessário */
 }
 .noticeTitle h1{
     font-size: 46px;
@@ -184,6 +191,7 @@ nav ul li a:hover{
     height: 250px;
     width: 300px; 
     border-radius: 10px;
+    
 }
 .listageNoticeThreeContent{
     display: flex;
@@ -284,6 +292,58 @@ footer{
     .noticeContent p{
         font-size: 20px;
         padding: 0px 20px 50px 20px;
+    }
+    .listageNotices{
+        padding: 5%;
+        width: 90%;
+    }
+    .listageNoticeOne{
+        flex-direction: column;
+        height: 520px;
+        width: 400px;
+    }
+    .listageNoticeOneImg{
+        width: 100%;
+    }
+    .listageNoticeOneImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .listageNoticeOneContent{
+        width: 380px;
+        font-size: 80%;
+    }
+    .listageNoticeTwo{
+        flex-direction: column;
+        height: 540px;
+        width: 400px;
+    }
+    .listageNoticeTwoImg{
+        width: 100%;
+    }
+    .listageNoticeTwoImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .listageNoticeTwoContent{
+        width: 380px;
+        font-size: 80%;
+    }
+    .listageNoticeThree{
+        flex-direction: column;
+        height: 500px;
+        width: 400px;
+    }
+    .listageNoticeThreeImg{
+        width: 100%;
+    }
+    .listageNoticeThreeImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .listageNoticeThreeContent{
+        width: 380px;
+        font-size: 80%;
     }
     footer{
         display: flex;
