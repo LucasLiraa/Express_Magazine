@@ -86,6 +86,122 @@ nav ul li a:hover{
     font-size: 24px;
 }
 
+.listageNotices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    gap: 20px;
+}
+.listageNoticeOne{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 820px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.listageNoticeOneImg img{
+    height: 250px;
+    width: 300px; 
+    border-radius: 10px;
+}
+.listageNoticeOneContent{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 600px;
+    margin: 20px;
+    gap: 20px;
+}
+.listageNoticeOneContentTitle a{
+    color: #0B0708;
+    text-decoration: none;
+}
+.listageNoticeTwoContentTitle a{
+    color: #0B0708;
+    text-decoration: none;
+}
+.listageNoticeThreeContentTitle a{
+    color: #0B0708;
+    text-decoration: none;
+}
+.listageNoticeOne:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.listageNoticeOne h3:hover{
+    cursor: pointer;    
+    text-decoration: underline;
+}
+
+.listageNoticeTwo{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 820px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.listageNoticeTwoImg img{
+    height: 250px;
+    width: 300px; 
+    border-radius: 10px;
+}
+.listageNoticeTwoContent{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 600px;
+    margin: 20px;
+    gap: 20px;
+}
+.listageNoticeTwo:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.listageNoticeTwo h3:hover{
+    cursor: pointer;    
+    text-decoration: underline;
+}
+
+.listageNoticeThree{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 820px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.listageNoticeThreeImg img{
+    height: 250px;
+    width: 300px; 
+    border-radius: 10px;
+}
+.listageNoticeThreeContent{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 600px;
+    margin: 20px;
+    gap: 20px;
+}
+.listageNoticeThree:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.listageNoticeThree h3:hover{
+    cursor: pointer;    
+    text-decoration: underline;
+}
+
 footer{
     background-color: #0B0708;
     color: #fff;
@@ -167,7 +283,7 @@ footer{
     }
     .noticeContent p{
         font-size: 20px;
-        padding: 0px 20px 100px 20px;
+        padding: 0px 20px 50px 20px;
     }
     footer{
         display: flex;
@@ -175,4 +291,35 @@ footer{
         justify-content: flex-end;
         font-size: 50%;
     }
+}
+
+
+.noticeButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 10vh;
+
+    margin-bottom: 50px;
+}
+
+.noticeButton button p{
+    text-decoration: none;
+    color: #fff;
+}
+
+.noticeButton button{
+    width: 200px;
+    height: 80px;
+
+    border-radius: 6px;
+    
+    background-color: #0B0708;
+}
+
+.noticeButton button:hover{
+    cursor: pointer;
+    background-color: #1f1719;
 }
