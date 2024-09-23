@@ -31,12 +31,24 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 60px;
     border-radius: 10px;
-    transition: 1s;
 }
 nav ul li a:hover{
-    padding: 10px 30px;
-    background-color: #1f1719;
+    background-color: #141313;
+}
+.headerNav select{
+    height: 36px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.headerNav option{
+    color: #0B0708;
+    border-radius: 6px;
 }
 
 .containerNotices{
